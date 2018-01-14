@@ -66,7 +66,7 @@ PATH=$PATH:~/bin
 cd ~/sodatoken/
 ./zcutil.build-arm.sh --disable-rust -j$(nproc)
 ```
-Instructions to redeem pre block 110,000 ZCL
+Instructions to redeem pre block 110,000 $SODA
 -------------
 1. Linux:
 Copy and paste your wallet.dat from ~/.zclassic/ to ~/.sodatoken. That's it!
