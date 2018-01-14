@@ -1,0 +1,2 @@
+# SodaToken
+Encrypted Privacy Coin 
