@@ -1,0 +1,16 @@
+Source: zcash
+Section: utils
+Priority: optional
+Maintainer: Binary Omen Foundation <info@sodatoken.org>
+Homepage: https://sodatoken.org
+Build-Depends: autoconf, automake, bsdmainutils, build-essential,
+ git, g++-multilib, libc6-dev, libtool,
+ m4, ncurses-dev, pkg-config, python,
+ unzip, wget, zlib1g-dev
+Vcs-Git: https://github.com/BinaryOmen/sodatoken.git
+Vcs-Browser: https://github.com/BinaryOmen/sodatoken
+
+Package: sodatoken
+Architecture: amd64
+Depends: ${shlibs:Depends}
+Description: Private and reliable transactions, communications, and publishing - sodatoken.org
