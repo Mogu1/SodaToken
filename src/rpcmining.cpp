@@ -883,8 +883,8 @@ UniValue getblocksubsidy(const UniValue& params, bool fHelp)
             "1. height         (numeric, optional) The block height.  If not provided, defaults to the current height of the chain.\n"
             "\nResult:\n"
             "{\n"
-            "  \"miner\" : x.xxx           (numeric) The mining reward amount in ZEN.\n"
-            "  \"community\" : x.xxx        (numeric) The community fund amount in ZEN.\n"
+            "  \"miner\" : x.xxx           (numeric) The mining reward amount in SODA TOKEN.\n"
+            "  \"community\" : x.xxx        (numeric) The community fund amount in SODA TOKEN.\n"
             "}\n"
             "\nExamples:\n"
             + HelpExampleCli("getblocksubsidy", "1000")

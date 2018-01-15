@@ -11,7 +11,7 @@ SODATX=${ZCASHTX:-$SRCDIR/sodatoken-tx}
 [ ! -x $SODAD ] && echo "$SODAD not found or not executable." && exit 1
 
 # The autodetected version git tag can screw up manpage output a little bit
-ZECVER=$($($ZENCLI --version | head -n1 | awk -F'[ -]' '{ print $5, $6 }'))
+ZECVER=$($($SODACLI --version | head -n1 | awk -F'[ -]' '{ print $5, $6 }'))
 
 # Create a footer file with copyright content.
 # This gets autodetected fine for sodatokend if --version-string is not set,

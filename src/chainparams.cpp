@@ -37,7 +37,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        strCurrencyUnits = "ZEN";
+        strCurrencyUnits = "SODA";
         consensus.fCoinbaseMustBeProtected = true;
         consensus.fDisableCoinbaseProtectionForCommunityFund = true;
         consensus.nSubsidySlowStartInterval = 2;
@@ -64,7 +64,7 @@ public:
         consensus.hfFixReplayProtectionHeight = 139200;
 
         /**
-         * ZEN Network Magic Start Value
+         * SODA TOKEN Network Magic Start Value
          */
 
         pchMessageStart[0] = 0x63;
@@ -116,11 +116,11 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("sodatoken.org", "dnsseed.sodatoken.org"));
-        vSeeds.push_back(CDNSSeedData("sodatokenseed.network", "dnsseed.sodatokenseed.network"));
-        vSeeds.push_back(CDNSSeedData("blockoperations.com", "zpool.blockoperations.com"));
-        vSeeds.push_back(CDNSSeedData("sodatokenchain.info", "node1.sodatokenchain.info"));
-        vSeeds.push_back(CDNSSeedData("sodatokenseed.network", "mainnet.sodatokenseed.network"));
+        vSeeds.push_back(CDNSSeedData("sodatoken.org", "seed1.sodatoken.org"));
+        vSeeds.push_back(CDNSSeedData("turbojet.club", "seed2.turbojet.club"));
+        vSeeds.push_back(CDNSSeedData("binaryomen.engineering", "seed3.binaryomen.engineering"));
+        vSeeds.push_back(CDNSSeedData("binaryomen.science", "seed4.binaryomen.science"));
+        vSeeds.push_back(CDNSSeedData("binaryomen.network", "seed5.binaryomen.network"));
         vSeeds.push_back(CDNSSeedData("sodatoken.org", "mainnet.sodatoken.org"));
 
         // guarantees the first 2 characters, when base58 encoded, are "zn"
@@ -242,7 +242,7 @@ class CTestNetParams : public CMainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        strCurrencyUnits = "ZNT";
+        strCurrencyUnits = "SODA";
         consensus.fCoinbaseMustBeProtected = true;
         consensus.fDisableCoinbaseProtectionForCommunityFund = true;
         consensus.nMajorityEnforceBlockUpgrade = 51;
@@ -353,7 +353,7 @@ class CRegTestParams : public CTestNetParams {
 public:
     CRegTestParams() {
         strNetworkID = "regtest";
-        strCurrencyUnits = "REG";
+        strCurrencyUnits = "REGSODA";
         consensus.fCoinbaseMustBeProtected = false;
         consensus.fDisableCoinbaseProtectionForCommunityFund = true;
         consensus.nSubsidySlowStartInterval = 0;
