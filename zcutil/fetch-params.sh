@@ -10,8 +10,10 @@ fi
 
 SPROUT_PKEY_NAME='sprout-proving.key'
 SPROUT_VKEY_NAME='sprout-verifying.key'
-SPROUT_PKEY_URL="https://sodatoken.org/downloads/$SPROUT_PKEY_NAME"
-SPROUT_VKEY_URL="https://sodatoken.org/downloads/$SPROUT_VKEY_NAME"
+SPROUT_PKEY_URL="https://sproutkey.sodatoken.org/$SPROUT_PKEY_NAME"
+SPROUT_VKEY_URL="https://sproutkey.sodatoken.org/$SPROUT_VKEY_NAME"
+SPROUT_URL="https://z.cash/downloads"
+SPROUT_IPFS="/ipfs/QmZKKx7Xup7LiAtFRhYsE1M7waXcv9ir9eCECyXAFGxhEo"
 
 SHA256CMD="$(command -v sha256sum || echo shasum)"
 SHA256ARGS="$(command -v sha256sum >/dev/null || echo '-a 256')"
