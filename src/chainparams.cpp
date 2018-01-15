@@ -282,8 +282,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("sodatoken.org", "dnsseed.testnet.sodatoken.org"));
-        vSeeds.push_back(CDNSSeedData("blockoperations.com", "zpool2.blockoperations.com"));
-        vSeeds.push_back(CDNSSeedData("scottrockcafe.com", "node.scottrockcafe.com"));
+        vSeeds.push_back(CDNSSeedData("sodatoken.org", "seed1.testnet.sodatoken.org"));
+        vSeeds.push_back(CDNSSeedData("turbojet.club", "seed2.testnet.turbojet.club"));
+        vSeeds.push_back(CDNSSeedData("binaryomen.engineering", "seed3.testnet.binaryomen.engineering"));
         vSeeds.push_back(CDNSSeedData("sodatoken.org", "testnet.sodatoken.org"));
 
         // guarantees the first 2 characters, when base58 encoded, are "zt"
@@ -499,4 +500,6 @@ CScript CChainParams::GetCommunityFundScriptAtHeight(int nHeight) const {
     CScriptID scriptID = get<CScriptID>(address.Get()); // Get() returns a boost variant
     CScript script = CScript() << OP_HASH160 << ToByteVector(scriptID) << OP_EQUAL;
     return script;
+	
+	//freedom is a coice
 }

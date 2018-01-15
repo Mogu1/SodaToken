@@ -184,8 +184,8 @@ UniValue addnode(const UniValue& params, bool fHelp)
             "1. \"node\"     (string, required) The node (see getpeerinfo for nodes)\n"
             "2. \"command\"  (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once\n"
             "\nExamples:\n"
-            + HelpExampleCli("addnode", "\"192.168.0.6:8233\" \"onetry\"")
-            + HelpExampleRpc("addnode", "\"192.168.0.6:8233\", \"onetry\"")
+            + HelpExampleCli("addnode", "\"192.168.0.6:8666\" \"onetry\"")
+            + HelpExampleRpc("addnode", "\"192.168.0.6:8666\", \"onetry\"")
         );
 
     string strNode = params[0].get_str();
@@ -228,8 +228,8 @@ UniValue disconnectnode(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"node\"     (string, required) The node (see getpeerinfo for nodes)\n"
             "\nExamples:\n"
-            + HelpExampleCli("disconnectnode", "\"192.168.0.6:8233\"")
-            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:8233\"")
+            + HelpExampleCli("disconnectnode", "\"192.168.0.6:8666\"")
+            + HelpExampleRpc("disconnectnode", "\"192.168.0.6:8666\"")
         );
 
     CNode* pNode = FindNode(params[0].get_str());

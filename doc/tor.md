@@ -83,7 +83,7 @@ as well, use `discover` instead:
 
 	./sodatokend ... -discover
 
-and open port 8233 on your firewall (or use -upnp).
+and open port 8666 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
@@ -136,7 +136,7 @@ Now use Soda Token-cli to verify there is only a single peer connection.
 	[
 	    {
 	        "id" : 1,
-	        "addr" : "zctestseie6wxgio.onion:18233",
+	        "addr" : "zctestseie6wxgio.onion:18666",
 	        ...
 	        "version" : 170002,
 	        "subver" : "/sodatoken:1.0.0/",
