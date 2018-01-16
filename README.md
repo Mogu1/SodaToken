@@ -38,6 +38,7 @@ A globally accessible and anonymous blockchain for censorship-resistant communic
 * Install for linux
 ```{r, engine='bash'}
 
+# Get source code
 git clone  https://github.com/BinaryOmen/SodaToken.git
 cd SodaToken
 chmod +x fetch-params.sh build.sh
@@ -71,7 +72,7 @@ PATH=$PATH:~/bin
 cd ~/sodatoken/
 ./zcutil.build-arm.sh --disable-rust -j$(nproc)
 ```
-Instructions to redeem pre block 110,000 $SODA
+Instructions to redeem pre block 100 $SODA
 -------------
 1. Linux:
 Copy and paste your wallet.dat from ~/.zclassic/ to ~/.sodatoken. That's it!
