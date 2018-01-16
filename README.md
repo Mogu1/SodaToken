@@ -41,10 +41,15 @@ A globally accessible and anonymous blockchain for censorship-resistant communic
 # Get source code
 git clone  https://github.com/BinaryOmen/SodaToken.git
 cd SodaToken
+
 chmod +x fetch-params.sh build.sh
+sed -i 's/\.\/b2/\.\/b2 --ignore-site-config/g' depends/packages/boost.mk #boost build error
 
 # Build
 ./zcutil/build.sh -j$(nproc)
+#in case u get build error try running this command
+find -type f | xargs -Ix sed -i.bak -r 's/\r//g' x
+
 # fetch key
 ./zcutil/fetch-params.sh
 # Run
