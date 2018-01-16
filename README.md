@@ -37,6 +37,11 @@ A globally accessible and anonymous blockchain for censorship-resistant communic
 
 * Install for linux
 ```{r, engine='bash'}
+
+git clone  https://github.com/BinaryOmen/SodaToken.git
+cd SodaToken
+chmod +x fetch-params.sh build.sh
+
 # Build
 ./zcutil/build.sh -j$(nproc)
 # fetch key
