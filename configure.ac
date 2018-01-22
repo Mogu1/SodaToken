@@ -757,7 +757,9 @@ AC_CHECK_LIB([gmpxx],[main],GMPXX_LIBS=-lgmpxx, [AC_MSG_ERROR(libgmpxx missing)]
 # libsnark header layout is broken unless cpp's -I is passed with the
 # libsnark directory, so for now we use this hideous workaround:
 echo 'Hunting for libsnark include directory...'
-[LIBSNARK_INCDIR="$(echo "$CPPFLAGS" | sed 's,^.*-I\([^ ]*/include\).*$,\1/libsnark,')"]
+#[LIBSNARK_INCDIR="$(echo "$CPPFLAGS" | sed 's,^.*-I\([^ ]*/include\).*$,\1/libsnark,')"]
+# temporary solution. fix it!
+LIBSNARK_INCDIR="/usr/local/include/libsnark"
 if test -d "$LIBSNARK_INCDIR"; then
    echo "Found libsnark include directory: $LIBSNARK_INCDIR"
 else
